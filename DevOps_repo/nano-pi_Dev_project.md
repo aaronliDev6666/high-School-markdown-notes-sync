@@ -1,3 +1,9 @@
+---
+tags:
+  - 技术/DevOps
+date: 2026-10-05
+---
+
 # 项目简介：Nano Pi M1 512MB RAM & FriendlyWrt 信息看板 & 无线控制面板设计
 
 ## 1. 项目概述

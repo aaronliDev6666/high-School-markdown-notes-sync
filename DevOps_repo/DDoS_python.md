@@ -1,3 +1,9 @@
+---
+tags:
+  - 技术/DevOps
+date: 2026-10-05
+---
+
 ```python
 import sys
 import os

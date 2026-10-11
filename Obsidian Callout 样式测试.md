@@ -1,3 +1,9 @@
+---
+tags:
+  - Obsidian/样式测试
+date: 2026-10-05
+---
+
 > [!bug]
 > Contents# 测试我的流程图
 
