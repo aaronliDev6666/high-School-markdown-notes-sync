@@ -1,0 +1,302 @@
+
+/* ==========================================================
+   GPT-style Monet Callouts
+   Material You × Macaron
+   High-brightness, low-saturation, multi-color
+   ========================================================== */
+
+/* ---------- Light mode: luminous pastel ---------- */
+.theme-light {
+  --mc-note-bg:     #E8F1FC;
+  --mc-abstract-bg: #F0EAFE;
+  --mc-info-bg:     #E3F3F8;
+  --mc-todo-bg:     #F9E8F1;
+  --mc-tip-bg:      #E0F3E9;
+  --mc-success-bg:  #DDF2E7;
+  --mc-question-bg: #F0E8FC;
+  --mc-warning-bg:  #FFF2D8;
+  --mc-failure-bg:  #FCE8E4;
+  --mc-danger-bg:   #F9E2E2;
+  --mc-bug-bg:      #FBE8DD;
+  --mc-example-bg:  #E4F1F8;
+  --mc-quote-bg:    #EDF0E1;
+
+  --mc-note-fg:     #385B8B;
+  --mc-abstract-fg: #70569C;
+  --mc-info-fg:     #326C7E;
+  --mc-todo-fg:     #8A4D6C;
+  --mc-tip-fg:      #376F57;
+  --mc-success-fg:  #286B4B;
+  --mc-question-fg: #7553A0;
+  --mc-warning-fg:  #86621D;
+  --mc-failure-fg:  #914D43;
+  --mc-danger-fg:   #983F4A;
+  --mc-bug-fg:      #955637;
+  --mc-example-fg:  #356D8D;
+  --mc-quote-fg:    #596B3D;
+
+  --mc-border-alpha: 32%;
+  --mc-shadow: rgba(65, 80, 110, 0.07);
+}
+
+/* ---------- Dark mode: luminous colored surfaces ---------- */
+.theme-dark {
+  --mc-note-bg:     #304867;
+  --mc-abstract-bg: #4A3D64;
+  --mc-info-bg:     #294B59;
+  --mc-todo-bg:     #57394B;
+  --mc-tip-bg:      #2C5042;
+  --mc-success-bg:  #285442;
+  --mc-question-bg: #4A3965;
+  --mc-warning-bg:  #5C4B2C;
+  --mc-failure-bg:  #603C36;
+  --mc-danger-bg:   #60343D;
+  --mc-bug-bg:      #614332;
+  --mc-example-bg:  #2C4C61;
+  --mc-quote-bg:    #414B32;
+
+  --mc-note-fg:     #D5E6FF;
+  --mc-abstract-fg: #E5D7FF;
+  --mc-info-fg:     #D0F1F8;
+  --mc-todo-fg:     #FFD9EA;
+  --mc-tip-fg:      #D3F5E3;
+  --mc-success-fg:  #CFF6DC;
+  --mc-question-fg: #E8D8FF;
+  --mc-warning-fg:  #FFEDBF;
+  --mc-failure-fg:  #FFDCD4;
+  --mc-danger-fg:   #FFDBE0;
+  --mc-bug-fg:      #FFE0C9;
+  --mc-example-fg:  #D4EEFF;
+  --mc-quote-fg:    #E4EDC9;
+
+  --mc-border-alpha: 45%;
+  --mc-shadow: rgba(0, 0, 0, 0.16);
+}
+
+/* ---------- Base card ---------- */
+.callout {
+  border: 1px solid
+    color-mix(in srgb, var(--mc-accent) var(--mc-border-alpha), transparent)
+    !important;
+
+  border-left: 4px solid var(--mc-accent) !important;
+  border-radius: 18px !important;
+
+  background: var(--mc-surface) !important;
+  box-shadow: 0 3px 12px var(--mc-shadow);
+
+  overflow: hidden;
+  transition: box-shadow 180ms ease;
+}
+
+.callout:hover {
+  box-shadow: 0 5px 18px var(--mc-shadow);
+}
+
+/* ---------- Title ---------- */
+.callout-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px 8px;
+
+  color: var(--mc-foreground) !important;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+.callout-title-inner {
+  color: var(--mc-foreground) !important;
+}
+
+/* ---------- Icon pill ---------- */
+.callout-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 32px;
+
+  width: 32px;
+  height: 32px;
+  border-radius: 11px;
+
+  color: var(--mc-accent) !important;
+  background: color-mix(in srgb, var(--mc-accent) 16%, transparent);
+}
+
+.callout-icon svg {
+  width: 19px;
+  height: 19px;
+}
+
+/* ---------- Content ---------- */
+.callout-content {
+  padding: 3px 15px 14px;
+  color: var(--text-normal);
+  line-height: 1.75;
+}
+
+.callout-content > :first-child {
+  margin-top: 0.35em;
+}
+
+.callout-content > :last-child {
+  margin-bottom: 0.2em;
+}
+
+.callout-content strong {
+  color: var(--mc-foreground);
+}
+
+.callout-content hr {
+  border: none;
+  border-top: 1px solid
+    color-mix(in srgb, var(--mc-accent) 24%, transparent);
+}
+
+/* ---------- Type color mapping ---------- */
+
+/* NOTE + aliases */
+.callout[data-callout="note"] {
+  --mc-surface: var(--mc-note-bg);
+  --mc-accent: #6B94D0;
+  --mc-foreground: var(--mc-note-fg);
+}
+
+/* ABSTRACT */
+.callout:is(
+  [data-callout="abstract"],
+  [data-callout="summary"],
+  [data-callout="tldr"]
+) {
+  --mc-surface: var(--mc-abstract-bg);
+  --mc-accent: #A18AD7;
+  --mc-foreground: var(--mc-abstract-fg);
+}
+
+/* INFO */
+.callout[data-callout="info"] {
+  --mc-surface: var(--mc-info-bg);
+  --mc-accent: #65AFC5;
+  --mc-foreground: var(--mc-info-fg);
+}
+
+/* TODO */
+.callout:is(
+  [data-callout="todo"],
+  [data-callout="check"]
+) {
+  --mc-surface: var(--mc-todo-bg);
+  --mc-accent: #CE8DB0;
+  --mc-foreground: var(--mc-todo-fg);
+}
+
+/* TIP + aliases */
+.callout:is(
+  [data-callout="tip"],
+  [data-callout="hint"],
+  [data-callout="important"]
+) {
+  --mc-surface: var(--mc-tip-bg);
+  --mc-accent: #73B99A;
+  --mc-foreground: var(--mc-tip-fg);
+}
+
+/* SUCCESS + aliases */
+.callout:is(
+  [data-callout="success"],
+  [data-callout="done"]
+) {
+  --mc-surface: var(--mc-success-bg);
+  --mc-accent: #63B58B;
+  --mc-foreground: var(--mc-success-fg);
+}
+
+/* QUESTION + aliases */
+.callout:is(
+  [data-callout="question"],
+  [data-callout="help"],
+  [data-callout="faq"]
+) {
+  --mc-surface: var(--mc-question-bg);
+  --mc-accent: #AC8AE0;
+  --mc-foreground: var(--mc-question-fg);
+}
+
+/* WARNING + aliases */
+.callout:is(
+  [data-callout="warning"],
+  [data-callout="caution"],
+  [data-callout="attention"]
+) {
+  --mc-surface: var(--mc-warning-bg);
+  --mc-accent: #D8B35E;
+  --mc-foreground: var(--mc-warning-fg);
+}
+
+/* FAILURE + aliases */
+.callout:is(
+  [data-callout="failure"],
+  [data-callout="fail"],
+  [data-callout="missing"]
+) {
+  --mc-surface: var(--mc-failure-bg);
+  --mc-accent: #DA9384;
+  --mc-foreground: var(--mc-failure-fg);
+}
+
+/* DANGER + alias */
+.callout:is(
+  [data-callout="danger"],
+  [data-callout="error"]
+) {
+  --mc-surface: var(--mc-danger-bg);
+  --mc-accent: #DB8794;
+  --mc-foreground: var(--mc-danger-fg);
+}
+
+/* BUG */
+.callout[data-callout="bug"] {
+  --mc-surface: var(--mc-bug-bg);
+  --mc-accent: #D69A72;
+  --mc-foreground: var(--mc-bug-fg);
+}
+
+/* EXAMPLE */
+.callout[data-callout="example"] {
+  --mc-surface: var(--mc-example-bg);
+  --mc-accent: #77B5D6;
+  --mc-foreground: var(--mc-example-fg);
+}
+
+/* QUOTE + alias */
+.callout:is(
+  [data-callout="quote"],
+  [data-callout="cite"]
+) {
+  --mc-surface: var(--mc-quote-bg);
+  --mc-accent: #A3B57B;
+  --mc-foreground: var(--mc-quote-fg);
+}
+
+/* ---------- Nested cards ---------- */
+.callout .callout {
+  border-radius: 14px !important;
+  box-shadow: none;
+}
+
+/* ---------- Fold control ---------- */
+.callout-fold {
+  border-radius: 8px;
+}
+
+.callout-fold:hover {
+  background: color-mix(in srgb, var(--mc-accent) 13%, transparent);
+}
+
+/* ---------- Accessibility ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .callout {
+    transition: none;
+  }
+}

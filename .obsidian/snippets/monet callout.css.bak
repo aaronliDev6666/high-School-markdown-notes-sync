@@ -1,0 +1,195 @@
+
+/* =========================================================
+   Monet Callouts · Material You × Macaron
+   Obsidian + Callout Customizer
+   ========================================================= */
+
+/* ---------- 1. Macaron palette ---------- */
+.theme-light {
+  --mc-mint:      #82BFAE;
+  --mc-blue:      #8EADD8;
+  --mc-lavender:  #B3A0D9;
+  --mc-peach:     #E8A99D;
+  --mc-yellow:    #D9B967;
+  --mc-pink:      #D89BB8;
+  --mc-sky:       #8FC5D8;
+  --mc-sage:      #A7B98A;
+
+  --mc-card-bg: #FFFFFF;
+  --mc-border: rgba(75, 90, 100, 0.12);
+  --mc-shadow: rgba(55, 65, 80, 0.07);
+  --mc-title: var(--text-normal);
+}
+
+.theme-dark {
+  --mc-mint:      #9ACDBD;
+  --mc-blue:      #A7C2EB;
+  --mc-lavender:  #C7B5EB;
+  --mc-peach:     #F0B8AC;
+  --mc-yellow:    #E5CC88;
+  --mc-pink:      #E5B0CA;
+  --mc-sky:       #A5D5E4;
+  --mc-sage:      #BCCDA0;
+
+  --mc-card-bg: #252832;
+  --mc-border: rgba(220, 225, 245, 0.10);
+  --mc-shadow: rgba(0, 0, 0, 0.16);
+  --mc-title: var(--text-normal);
+}
+
+/* ---------- 2. Material You card surface ---------- */
+.callout {
+  --mc-radius: 18px;
+
+  border: 1px solid var(--mc-border) !important;
+  border-left: 3px solid var(--callout-color) !important;
+  border-radius: var(--mc-radius) !important;
+
+  background: color-mix(
+    in srgb,
+    var(--callout-color) 8%,
+    var(--mc-card-bg)
+  ) !important;
+
+  box-shadow: 0 3px 12px var(--mc-shadow);
+  overflow: hidden;
+  transition:
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+/* Hover: restrained, not a flying button */
+.callout:hover {
+  box-shadow: 0 5px 18px var(--mc-shadow);
+}
+
+/* ---------- 3. Rounded title bar ---------- */
+.callout-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 14px 9px;
+  color: var(--mc-title);
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+/* Material-style icon container */
+.callout-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+
+  border-radius: 11px;
+  color: var(--callout-color);
+
+  background: color-mix(
+    in srgb,
+    var(--callout-color) 17%,
+    transparent
+  );
+}
+
+/* Icon size */
+.callout-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2;
+}
+
+/* ---------- 4. Content spacing ---------- */
+.callout-content {
+  padding: 2px 14px 13px;
+  line-height: 1.7;
+}
+
+.callout-content > :first-child {
+  margin-top: 0.35em;
+}
+
+.callout-content > :last-child {
+  margin-bottom: 0.2em;
+}
+
+/* Softer separators inside cards */
+.callout-content hr {
+  border: none;
+  border-top: 1px solid var(--mc-border);
+}
+
+/* Rounded code blocks inside callouts */
+.callout-content pre {
+  border-radius: 12px;
+}
+
+/* ---------- 5. Nested callouts ---------- */
+.callout .callout {
+  border-radius: 14px !important;
+  box-shadow: none;
+  background: color-mix(
+    in srgb,
+    var(--callout-color) 5%,
+    var(--mc-card-bg)
+  ) !important;
+}
+
+/* ---------- 6. Built-in callout colors ---------- */
+.callout[data-callout="note"],
+.callout[data-callout="info"] {
+  --callout-color: var(--mc-blue);
+}
+
+.callout[data-callout="tip"],
+.callout[data-callout="success"],
+.callout[data-callout="done"] {
+  --callout-color: var(--mc-mint);
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"] {
+  --callout-color: var(--mc-yellow);
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"] {
+  --callout-color: var(--mc-peach);
+}
+
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="example"] {
+  --callout-color: var(--mc-lavender);
+}
+
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  --callout-color: var(--mc-sage);
+}
+
+.callout[data-callout="todo"] {
+  --callout-color: var(--mc-pink);
+}
+
+/* ---------- 7. Fold indicator ---------- */
+.callout-fold {
+  padding: 4px;
+  border-radius: 8px;
+  transition: background 160ms ease;
+}
+
+.callout-fold:hover {
+  background: var(--background-modifier-hover);
+}
+
+/* ---------- 8. Mobile-friendly motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .callout,
+  .callout-fold {
+    transition: none;
+  }
+}

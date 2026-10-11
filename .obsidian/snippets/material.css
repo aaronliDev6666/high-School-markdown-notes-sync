@@ -1,0 +1,21 @@
+
+/* Aaron · Material You × Macaron */
+
+.markdown-rendered .mermaid {
+  padding: 16px;
+  margin: 20px auto;
+  border-radius: 24px;
+  background: rgba(160, 160, 200, 0.08);
+  border: 1px solid rgba(160, 160, 200, 0.2);
+}
+
+.markdown-rendered .mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 圆角流程节点 */
+.markdown-rendered .mermaid .node rect {
+  rx: 12px;
+  ry: 12px;
+}

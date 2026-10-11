@@ -1,0 +1,235 @@
+{
+  "customColors": [
+    {
+      "name": "monet-blue",
+      "hex": "#6D94D1"
+    },
+    {
+      "name": "monet-mint",
+      "hex": "#73BA98"
+    },
+    {
+      "name": "monet-lavender",
+      "hex": "#A38ADE"
+    },
+    {
+      "name": "monet-peach",
+      "hex": "#D99183"
+    },
+    {
+      "name": "monet-butter",
+      "hex": "#D6B05A"
+    },
+    {
+      "name": "monet-rose",
+      "hex": "#D18BAF"
+    },
+    {
+      "name": "monet-sky",
+      "hex": "#66B5CF"
+    },
+    {
+      "name": "monet-sage",
+      "hex": "#A5B87E"
+    }
+  ],
+  "standardColors": {
+    "red": "#E87979",
+    "blue": "#6D94D1",
+    "green": "#73BA98",
+    "yellow": "#E5C46D",
+    "orange": "#E8A17E",
+    "purple": "#A38ADE",
+    "pink": "#D18BAF",
+    "teal": "#66B5CF",
+    "grey": "#A0A9B8",
+    "gray": "#A0A9B8"
+  },
+  "customStyles": [],
+  "standardStyles": {
+    "note": {
+      "name": "note",
+      "bg": "linear-gradient(135deg, #E8F1FF 0%, #DCE9FF 100%)",
+      "border": "#6D94D1",
+      "text": "#355B91",
+      "link": "#6D94D1",
+      "icon": "pencil",
+      "iconColor": "#6D94D1",
+      "titleColor": "#355B91",
+      "borderWidth": "1px",
+      "borderStyle": "solid",
+      "borderRadius": "18px",
+      "compact": false
+    },
+    "abstract": {
+      "name": "abstract",
+      "bg": "linear-gradient(135deg, #F0E9FF 0%, #E6DCFF 100%)",
+      "border": "#A38ADE",
+      "text": "#694E9C",
+      "link": "#A38ADE",
+      "icon": "clipboard-list",
+      "iconColor": "#A38ADE",
+      "titleColor": "#694E9C",
+      "borderWidth": "1px",
+      "borderStyle": "solid",
+      "borderRadius": "18px",
+      "compact": false
+    },
+    "info": {
+      "name": "info",
+      "bg": "linear-gradient(135deg, #E2F5FC 0%, #D3EDF8 100%)",
+      "border": "#66B5CF",
+      "text": "#2D687C",
+      "link": "#66B5CF",
+      "icon": "info",
+      "iconColor": "#66B5CF",
+      "titleColor": "#2D687C",
+      "borderWidth": "1px",
+      "borderStyle": "solid",
+      "borderRadius": "18px",
+      "compact": false
+    },
+    "todo": {
+      "name": "todo",
+      "bg": "linear-gradient(135deg, #FCE8F2 0%, #F7D9E8 100%)",
+      "border": "#D18BAF",
+      "text": "#874969",
+      "link": "#D18BAF",
+      "icon": "check-circle-2",
+      "iconColor": "#D18BAF",
+      "titleColor": "#874969",
+      "borderWidth": "1px",
+      "borderStyle": "solid",
+      "borderRadius": "18px",
+      "compact": false
+    },
+    "tip": {
+      "name": "tip",
+      "bg": "linear-gradient(135deg, #E0F6E9 0%, #D2EFDF 100%)",
+      "border": "#73BA98",
+      "text": "#316B50",
+      "link": "#73BA98",
+      "icon": "flame",
+      "iconColor": "#73BA98",
+      "titleColor": "#316B50",
+      "borderWidth": "1px",
+      "borderStyle": "solid",
+      "borderRadius": "18px",
+      "compact": false
+    },
+    "success": {
+      "name": "success",
+      "bg": "linear-gradient(135deg, #DDF5E7 0%, #CDEEDB 100%)",
+      "border": "#62B58A",
+      "text": "#286847",
+      "link": "#62B58A",
+      "icon": "check",
+      "iconColor": "#62B58A",
+      "titleColor": "#286847",
+      "borderWidth": "1px",
+      "borderStyle": "solid",
+      "borderRadius": "18px",
+      "compact": false
+    },
+    "question": {
+      "name": "question",
+      "bg": "linear-gradient(135deg, #F1E8FF 0%, #E7D9FF 100%)",
+      "border": "#AA87DF",
+      "text": "#6C4B9B",
+      "link": "#AA87DF",
+      "icon": "help-circle",
+      "iconColor": "#AA87DF",
+      "titleColor": "#6C4B9B",
+      "borderWidth": "1px",
+      "borderStyle": "solid",
+      "borderRadius": "18px",
+      "compact": false
+    },
+    "warning": {
+      "name": "warning",
+      "bg": "linear-gradient(135deg, #FFF3D8 0%, #FFE9BD 100%)",
+      "border": "#D6B05A",
+      "text": "#805C1A",
+      "link": "#D6B05A",
+      "icon": "alert-triangle",
+      "iconColor": "#D6B05A",
+      "titleColor": "#805C1A",
+      "borderWidth": "1px",
+      "borderStyle": "solid",
+      "borderRadius": "18px",
+      "compact": false
+    },
+    "failure": {
+      "name": "failure",
+      "bg": "linear-gradient(135deg, #FCE8E5 0%, #F7DAD5 100%)",
+      "border": "#D99183",
+      "text": "#8C493F",
+      "link": "#D99183",
+      "icon": "x",
+      "iconColor": "#D99183",
+      "titleColor": "#8C493F",
+      "borderWidth": "1px",
+      "borderStyle": "solid",
+      "borderRadius": "18px",
+      "compact": false
+    },
+    "danger": {
+      "name": "danger",
+      "bg": "linear-gradient(135deg, #FBE4E9 0%, #F5D4DE 100%)",
+      "border": "#D78398",
+      "text": "#8D3E50",
+      "link": "#D78398",
+      "icon": "zap",
+      "iconColor": "#D78398",
+      "titleColor": "#8D3E50",
+      "borderWidth": "1px",
+      "borderStyle": "solid",
+      "borderRadius": "18px",
+      "compact": false
+    },
+    "bug": {
+      "name": "bug",
+      "bg": "linear-gradient(135deg, #FCEBDD 0%, #F6DDC9 100%)",
+      "border": "#D49A70",
+      "text": "#8C5535",
+      "link": "#D49A70",
+      "icon": "bug",
+      "iconColor": "#D49A70",
+      "titleColor": "#8C5535",
+      "borderWidth": "1px",
+      "borderStyle": "solid",
+      "borderRadius": "18px",
+      "compact": false
+    },
+    "example": {
+      "name": "example",
+      "bg": "linear-gradient(135deg, #E3F2FC 0%, #D6EAF8 100%)",
+      "border": "#78B6D8",
+      "text": "#32678A",
+      "link": "#78B6D8",
+      "icon": "list",
+      "iconColor": "#78B6D8",
+      "titleColor": "#32678A",
+      "borderWidth": "1px",
+      "borderStyle": "solid",
+      "borderRadius": "18px",
+      "compact": false
+    },
+    "quote": {
+      "name": "quote",
+      "bg": "linear-gradient(135deg, #EEF2DF 0%, #E3EACF 100%)",
+      "border": "#A5B87E",
+      "text": "#56683B",
+      "link": "#A5B87E",
+      "icon": "quote",
+      "iconColor": "#A5B87E",
+      "titleColor": "#56683B",
+      "borderWidth": "1px",
+      "borderStyle": "solid",
+      "borderRadius": "18px",
+      "compact": false
+    }
+  },
+  "customLayouts": [],
+  "defaultMetadata": ""
+}
