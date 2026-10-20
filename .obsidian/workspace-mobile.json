@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "化学/专题-燃料电池.md",
+                "file": "化学/选必一/专题-盐类的水解.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "专题-燃料电池"
+              "title": "专题-盐类的水解"
             }
           }
         ],
@@ -200,7 +200,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "remotely-save:Remotely Save": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -218,10 +217,13 @@
   "active": "fbd637e66b3309d0",
   "lastOpenFiles": [
     "化学/专题-单体的拆分.md",
+    "地理/方法论/地理通用方法论.md",
+    "地理/必修二总述.md",
+    "地理/课时8-综合应用与答题模板.md",
+    "化学/选必一/专题-盐类的水解.md",
     "化学/专题-燃料电池.md",
     "DevOps_repo/Obsidian_markdown_example.md",
     "Obsidian Callout 样式测试.md",
-    "地理/必修二总述.md",
     "地理/课时1-大气的受热过程.md",
     "svg/task_alt_24dp_D18BAF_FILL0_wght400_GRAD0_opsz24.svg",
     "Untitled.md",
