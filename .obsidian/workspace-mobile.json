@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "23a56a140b4c3e2a",
+        "id": "d9fcd0782a3313e0",
         "type": "tabs",
         "children": [
           {
-            "id": "2b1f5d5c5ce03bb6",
+            "id": "a380197478e1b87a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "大气的垂直分层.md",
+                "file": "化学/选必一/专题-离子守恒.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "大气的垂直分层"
-            }
-          },
-          {
-            "id": "fbd637e66b3309d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "化学/选必一/专题-盐类的水解.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "专题-盐类的水解"
+              "title": "专题-离子守恒"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,19 +199,23 @@
       "callout-studio:Quick insert block callout": false
     }
   },
-  "active": "fbd637e66b3309d0",
+  "active": "a380197478e1b87a",
   "lastOpenFiles": [
-    "化学/专题-单体的拆分.md",
+    "化学/选必一/专题-盐类的水解.md",
+    "Untitled.md",
+    "HOfAt9mbIAA_I9g.jpg",
     "地理/方法论/地理通用方法论.md",
+    "Untitled.base",
+    "Untitled.canvas",
+    "地理/大气专题-课时1-8合并.md",
+    "化学/专题-单体的拆分.md",
     "地理/必修二总述.md",
     "地理/课时8-综合应用与答题模板.md",
-    "化学/选必一/专题-盐类的水解.md",
     "化学/专题-燃料电池.md",
     "DevOps_repo/Obsidian_markdown_example.md",
     "Obsidian Callout 样式测试.md",
     "地理/课时1-大气的受热过程.md",
     "svg/task_alt_24dp_D18BAF_FILL0_wght400_GRAD0_opsz24.svg",
-    "Untitled.md",
     "svg/summarize_24dp_A38ADE_FILL0_wght400_GRAD0_opsz24.svg.bak",
     "svg/summarize_24dp_A38ADE_FILL0_wght400_GRAD0_opsz24.svg",
     "svg/ink_pen_24dp_6D94D1_FILL0_wght400_GRAD0_opsz24.svg",
